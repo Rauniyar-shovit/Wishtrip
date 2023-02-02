@@ -5,11 +5,287 @@ Instead, 1 rem = 1em = 16px   */
 /*Below 1344px(Smaller desktops)  */
 /*********************/
 @media (max-width: 84em) {
-  .hero {
+  .container {
     max-width: 120rem;
   }
+  .testimonial-block {
+    max-width: 130rem;
+  }
 
+  .footer-container {
+    max-width: 130rem;
+  }
   .heading-primary {
     font-size: 4.4rem;
+  }
+  .testimonial-heading,
+  .gallery-heading,
+  .article-heading,
+  .travel-news,
+  .heading {
+    font-size: 4.4rem;
+  }
+
+  .package-title {
+    font-size: 2.4rem;
+  }
+}
+
+/**********************/
+/*Below 1200px(Smaller desktops)  */
+/*********************/
+
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+  .heading-secondary {
+    font-size: 3.6rem;
+  }
+
+  .heading-secondary {
+    font-size: 3.6rem;
+  }
+  .hero-text-area {
+    padding: 7.2rem 5.5rem;
+  }
+
+  .footer-container {
+    max-width: 125rem;
+  }
+  .company-col,
+  .contact-col,
+  .socials-col {
+    padding: 0;
+  }
+}
+
+@media (max-width: 72em) {
+  .newsletter {
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.5fr;
+    gap: 1.8rem;
+  }
+  .newsletter-heading {
+    grid-column: 1/-1;
+    justify-self: start;
+  }
+  .newsletter input {
+    padding: 1.4rem 1.4rem 1.4rem 1rem;
+  }
+
+  .footer-links-grid {
+    column-gap: 2rem;
+    row-gap: 2.4rem;
+  }
+  .social-link {
+    gap: 2.5rem;
+  }
+
+  .section-packages,
+  .section-testimonials,
+  .section-updates,
+  .footer {
+    padding: 5rem 0;
+  }
+  .section-gallery {
+    padding: 5rem 0 1.8rem 0;
+  }
+  .gallery-heading,
+  .travel-news {
+    margin-bottom: 2rem;
+  }
+
+  .small-article-description {
+    font-size: 2rem;
+  }
+}
+/**********************/
+/*Below 944[x(tablets)  */
+/*********************/
+
+@media (max-width: 59em) {
+  html {
+    /* 8px / 16px = 0.5 = 50 % */
+    font-size: 50%;
+  }
+
+  .container {
+    max-width: 107rem;
+  }
+
+  .testimonial-block {
+    max-width: 115rem;
+  }
+
+  .duration-tile,
+  .price-tile {
+    padding: 1.6rem;
+  }
+  .grid-columngap-sm {
+    column-gap: 1.8rem !important;
+  }
+
+  .article {
+    padding: 1.4rem 1.4rem 2rem 0;
+  }
+  .small-article-description {
+    font-size: 1.8rem;
+  }
+  .article-news-heading {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+  }
+  .article-description {
+    margin-bottom: 1.8rem;
+  }
+
+  .footer-container {
+    max-width: 112rem;
+  }
+  .footer-logo {
+    font-size: 2.6rem;
+  }
+  .footer-description {
+    font-size: 1.4rem;
+  }
+
+  /* mobilenav */
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+
+  .main-nav {
+    background-color: rgba(255, 255, 255, 0.9);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+    transform: translateX(100%);
+
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+
+    z-index: 9999;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .main-nav-link {
+    font-size: 1.7rem;
+  }
+
+  .heading,
+  .testimonial-heading {
+    font-size: 4.2rem;
+  }
+  .gallery-heading,
+  .travel-news {
+    font-size: 3.6rem;
+  }
+  .testimonial-description-box {
+    padding: 2.6rem;
+  }
+}
+
+/**********************/
+/*Below 700[(Smaller tablets)  */
+/*********************/
+@media (max-width: 49em) {
+  .hero-text-area {
+    margin-top: calc(100vh / 15);
+  }
+  .hero-textbox {
+    grid-template-columns: 1.5fr 1fr;
+  }
+  .testimonial-block {
+    max-width: 95rem !important;
+  }
+
+  .container {
+    max-width: 90rem;
+    padding: 3rem;
+  }
+  .heading-primary {
+    font-size: 3.8rem;
+  }
+  .heading-box {
+    font-size: 3.8rem;
+    margin-bottom: 4rem;
+  }
+  .grid--3cols {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5rem !important;
+  }
+  .duration-tile,
+  .price-tile {
+    padding: 2rem;
+  }
+
+  .newsletter {
+    grid-template-columns: 1fr 1fr;
+  }
+  .quote-opening,
+  .quote-closing {
+    font-size: 6rem;
+    color: #dee2e6;
+  }
+  .review {
+    padding: 2rem 4rem;
+  }
+  .testimonial {
+    grid-template-columns: 1.4fr 1.8fr;
+    column-gap: 2.8rem;
+  }
+
+  .section-packages,
+  .section-testimonials,
+  .section-updates .footer {
+    padding: 3.4rem 0;
+  }
+  .section-gallery {
+    padding: 5rem 0 1.8rem 0;
+  }
+
+  .gallery-heading {
+    margin-bottom: 2rem;
+  }
+  .travel-news {
+    margin-bottom: 0;
+  }
+  .article-img {
+    height: 100%;
+    object-fit: cover;
+  }
+  .footer-links-grid {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }

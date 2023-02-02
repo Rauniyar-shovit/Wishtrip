@@ -1,5 +1,14 @@
 "use strict";
 
+// nav open
+const btnNavEl = document.querySelector(".btn-mobile-nav");
+console.log(btnNavEl);
+const headerEl = document.querySelector(".header");
+
+btnNavEl.addEventListener("click", function () {
+  headerEl.classList.toggle("nav-open");
+});
+
 // sticky
 const sectionHeroEl = document.querySelector(".section-hero");
 console.log(sectionHeroEl);
