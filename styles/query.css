@@ -161,7 +161,7 @@ Instead, 1 rem = 1em = 16px   */
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
 
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -214,12 +214,47 @@ Instead, 1 rem = 1em = 16px   */
   .testimonial-description-box {
     padding: 2.6rem;
   }
+  .footer-col-list {
+    height: fit-content;
+  }
 }
 
 /**********************/
 /*Below 700[(Smaller tablets)  */
 /*********************/
-@media (max-width: 49em) {
+
+@media (max-width: 52em) {
+  .hero-textbox {
+    grid-template-columns: 1.5fr 0.8fr;
+    column-gap: 2rem;
+  }
+  .newsletter-subscribe-btn {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+  }
+  .newsletter-btn {
+    text-align: center;
+  }
+  .footer {
+    max-width: 110rem;
+  }
+  .newsletter {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2rem;
+  }
+  .grid--3cols {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5rem !important;
+  }
+}
+/**********************/
+/*Below 700[(Smaller tablets)  */
+/*********************/
+@media (max-width: 45em) {
+  .hero-textbox {
+    grid-template-columns: 1.5fr 0.3fr;
+    column-gap: 2rem;
+  }
   .hero-text-area {
     margin-top: calc(100vh / 15);
   }
@@ -241,18 +276,12 @@ Instead, 1 rem = 1em = 16px   */
     font-size: 3.8rem;
     margin-bottom: 4rem;
   }
-  .grid--3cols {
-    grid-template-columns: 1fr 1fr;
-    column-gap: 5rem !important;
-  }
+
   .duration-tile,
   .price-tile {
     padding: 2rem;
   }
 
-  .newsletter {
-    grid-template-columns: 1fr 1fr;
-  }
   .quote-opening,
   .quote-closing {
     font-size: 6rem;
@@ -287,5 +316,147 @@ Instead, 1 rem = 1em = 16px   */
   }
   .footer-links-grid {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .gallery-grid {
+    grid-template-rows: repeat(5, 8vw);
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .gallery-1 {
+    grid-column: 1 /3;
+    grid-row: 3/-1;
+  }
+
+  .gallery-2 {
+    grid-column: 3/4;
+    grid-row: 1/4;
+  }
+
+  .gallery-3 {
+    grid-column: 4/5;
+    grid-row: 1/4;
+  }
+  .gallery-4 {
+    grid-column: 1/2;
+    grid-row: 1/3;
+  }
+  .gallery-5 {
+    grid-column: 2/3;
+    grid-row: 1/3;
+  }
+  .gallery-6 {
+    grid-column: 3/4;
+    grid-row: 4/-1;
+  }
+  .gallery-7 {
+    grid-column: 4/5;
+    grid-row: 4/-1;
+  }
+}
+
+@media (max-width: 39em) {
+  .hero-textbox {
+    grid-template-columns: 1.5fr 0.5fr;
+    column-gap: 2rem;
+  }
+}
+/**********************/
+/*Below 550(Phones)  */
+/*********************/
+@media (max-width: 35em) {
+  .testimonial-block {
+    max-width: 60rem;
+  }
+  .container {
+    max-width: 60rem;
+  }
+  .newsletter-subscribe-btn {
+    grid-template-columns: 0.7fr 0.5fr;
+  }
+  .package {
+    padding: 1rem 2rem;
+  }
+  .hero-article {
+    padding: 0;
+  }
+  .grid--2cols {
+    grid-template-columns: 1fr;
+  }
+  .newsletter {
+    grid-template-columns: 1fr 1fr;
+  }
+  .hero-textbox {
+    grid-template-columns: 1.5fr 0.1fr;
+    column-gap: 2rem;
+  }
+
+  .grid--3cols {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: none;
+  }
+
+  .gallery-item {
+    grid-column: none;
+  }
+  .footer-links-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .grid-footer {
+    grid-template-columns: 1fr;
+  }
+  .logo-col-grid {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+  }
+  .carousel-arrow {
+    display: none;
+  }
+
+  .testimonial-img {
+    padding: 0;
+    height: 100%;
+    object-fit: cover;
+  }
+  .footer-description {
+    margin-bottom: 2rem;
+  }
+
+  .gallery-grid {
+    grid-template-rows: repeat(5, 8vw);
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .gallery-1 {
+    grid-column: 1 /3;
+    grid-row: 3/-1;
+  }
+
+  .gallery-2 {
+    grid-column: 3/4;
+    grid-row: 1/4;
+  }
+
+  .gallery-3 {
+    grid-column: 4/5;
+    grid-row: 1/4;
+  }
+  .gallery-4 {
+    grid-column: 1/2;
+    grid-row: 1/3;
+  }
+  .gallery-5 {
+    grid-column: 2/3;
+    grid-row: 1/3;
+  }
+  .gallery-6 {
+    grid-column: 3/4;
+    grid-row: 4/-1;
+  }
+  .gallery-7 {
+    grid-column: 4/5;
+    grid-row: 4/-1;
   }
 }

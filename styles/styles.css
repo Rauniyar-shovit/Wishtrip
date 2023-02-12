@@ -4,16 +4,16 @@
 .header {
   display: flex;
   gap: 2.4rem;
-  align-items: center;
   height: 9.6rem;
   padding: 1.2rem 4.8rem;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
 }
 .logo-nav {
   display: flex;
   gap: 2.4rem;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .logo {
@@ -696,7 +696,7 @@
 .footer-links-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1fr 2fr;
+  grid-template-rows: 0.75fr 1fr;
 }
 .newsletter-row {
   grid-column: 1/-1;
